@@ -3,7 +3,7 @@ from django.db import models
 from django.dispatch import receiver
 from rest_framework.authtoken.models import Token
 
-from monstagram.settings.base import EthanWarning
+from moments.settings.base import EthanWarning
 
 User = get_user_model()
 
