@@ -10,7 +10,7 @@ User = get_user_model()
 class Moment(models.Model):
 	author = models.ForeignKey(User, related_name='moments')
 	image = models.ImageField(upload_to='uploads')
-	caption = models.CharField(max_length=140, null=True)
+	caption = models.CharField(max_length=140, null=True, blank=True)
 	creation_time = models.DateTimeField(auto_now_add=True)
 
 	def __str__(self):
